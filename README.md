@@ -66,6 +66,8 @@ conda create --name zipnerf python=3.9
 conda activate zipnerf
 
 # Install requirements.
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install nvidia/label/cuda-11.7.1::cuda
 pip install -r requirements.txt
 
 # Install other cuda extensions
